@@ -1,0 +1,179 @@
+/*NOSOTROS*/
+
+/*Objetivo*/
+
+.objetivo{
+	width: 100%;
+    height: 600px;
+    background: rgba(24, 145, 172, 0.5);
+	margin: auto;
+}
+
+video {
+	position: absolute;
+	left: 0px;
+	top: -60px;
+	height: 731px;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.objetivo .wave{
+    margin-bottom: 30px;
+}
+
+.texto{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	margin: auto;
+	padding-top: 10%;
+}
+
+.texto h1{
+    font-size: 70px;
+    color:#D2ECF9;
+	text-align: center;
+}
+
+.texto p{
+	width: 60%;
+	font-size: 20px;
+    font-weight: 300;
+    color:#D2ECF9;
+	text-align: justify;
+}
+
+.objetivo .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*ODS*/
+
+.ODS{
+    padding: 0 0 10px 0;
+	margin: auto;
+}
+
+.contenedor-ODS{
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+}
+
+.imagen-ODS{
+    width: 30%;
+}
+
+.ODS .contenido-textos{
+    width: 52%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.contenido-textos P{
+    padding-bottom: 20px;
+	color: #253B6E;
+	text-align: justify;
+}
+
+.contenido-textos h3{
+    padding-bottom: 15px;
+	color: #253B6E;
+}
+
+.contenido-textos h3 span{
+    background: #1891AC;
+    color: #D2ECF9;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+/*Trabajadores*/
+
+.personas{
+	align-items:center;
+	text-align:center;
+	justify-content:space-evenly;
+	max-width:100%;
+	display:flex;
+	flex-wrap: wrap; 	
+}
+
+.ind{
+	background: rgba(24, 145, 172, 0.7);
+	margin-bottom:60px;
+	width:26%;
+	height:220px;
+	align-items:center;
+	text-align:center;
+	justify-content:justify;
+	border-radius: 40px;
+	margin-top:20px;
+}
+
+.ind img{
+	width:70px;
+	height:100px;
+	object-fit:cover;
+	border: 3px solid #D2ECF9;
+	border-radius: 40px;
+	text-align:center;
+	margin-top:18px;
+	margin-bottom:14px;
+	background-color: #D2ECF9;
+}
+
+.ind h4{
+	color:#D2ECF9;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.ind p{
+	color:#D2ECF9;
+	text-align:center;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10px;	
+}
+
+/*Pantalla pequeña*/
+
+@media (max-width: 920px) {
+	
+	.texto h1{
+		font-size: 58px;
+	}
+
+	.texto p{
+		width: 88%;
+		font-size: 18px;
+	}
+	
+	.ind img{
+		width:52px;
+		height:73px;
+		margin-top:9px;
+		margin-bottom:6px;
+	}
+	
+	.ind h4{
+		margin-bottom:5px;
+	}
+	
+	.ind p{
+		margin-left:7px;
+		margin-right:7px;
+	}		
+}

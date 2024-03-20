@@ -1,1 +1,155 @@
-<h1>Titulo</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="shortcut icon" href="imagenes/logo.png">
+		<link href="inicio.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<title>Inicio</title>
+	</head>
+	<body>
+		<header class="inicio">
+			<div class="brand">
+				<span class="logo"><img src="imagenes/logo.png"></span>
+				<h1>D-TEK</h1>
+			</div>
+			<span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+			<div class="navbar" id="nav">
+				<ul>
+					<li class="active">
+						<span class="fas fa-home" id="headIcon"></span>
+						<a href="inicio.html">Inicio</a>
+					</li>
+					<li>
+						<span class="fas fa-hand-paper" id="headIcon"></span>
+						<a href="nosotros.html" id="headtitle">Nosotros</a>
+					</li>
+					<li>
+						<span class="fas fa-book-open" id="headIcon"></span>
+						<a href="productos.html"id="headtitle">Productos</a>
+					</li>
+					<li>
+						<span class="far fa-user-circle" id="headIcon"></span>
+						<a href="clientes1.html" id="headtitle">Clientes</a>
+					</li>
+					<li class="ultima">
+						<span class="fas fa-question-circle" id="headIcon"></span>
+						<a href="preguntas.html" id="headtitle">Preguntas</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="cabezal">
+				<section class="textos-header">
+					<h1>Mejora tu servicio sanitario</h1>
+					<h2>Con un software puntero</h2>
+				</section>
+				<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+						style="height: 100%; width: 100%;">
+						<path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: #D2ECF9;;"></path>
+				</svg></div>
+			</section>			
+			<section class="contenedor nuestra-startup">
+				<h2 class="title">NUESTRA STARTUP</h2>
+				<div class="contenedor-nuestra-startup">
+					<img src="imagenes/nuestra_startup.png" alt="" class="imagen-nuestra-startup">
+					<div class="contenido-textos">
+						<p>D-TEK es una StartUp que ofrece sus servicios a hospitales y centros sanitarios, para ayudarles a mejorar sus servicios
+						   mediante BrainSoft, un software de diagnóstico de tumores cerebrales.</p>
+						<h3><span>1</span>Los mejores productos</h3>
+						<p>Algoritmo de alta efectividad único en el mercado.</p>
+						<h3><span>2</span>Acesible a todo tipo de centros sanitarios</h3>
+						<p>Servicios para todo tipo de centros sanitarios y necesidades, independendientemente de su tamaño y cantidad de clientes.</p>	
+					</div>							
+				</div>
+				<div class="boton">
+					<a href="nosotros.html">Conócenos</a>
+				</div>						
+			</section>			
+			<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+						style="height: 100%; width: 100%;">
+						<path d="M0.00,49.98 C250.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: rgba(24, 145, 172, 0.5);;"></path>
+			</svg></div>									
+			<section class="clientes">
+				<h2 class="title">OPINIONES DE NUESTROS CLIENTES</h2>
+				<div class="cards">
+					<div class="card">
+						<img src="imagenes/perfil_hombre.png" alt="">
+						<div class="contenido-texto-card">
+							<h4>Dr. José Luis Peréz</h4>
+							<p>"Los servicios de D-TEK han ayudado a acelerar el proceso de diagnóstico de tumores cerebrales,
+							   haciendo posible empezar con el tratamiento en una etapa más temprana."</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="imagenes/perfil_mujer.png" alt="">
+						<div class="contenido-texto-card">
+							<h4>Dra. Laura Agirre Llona</h4>
+							<p>"El software es fácil de usar e intuitivo. Además, facilita el proceso de diagnóstico tanto para los
+							   sanitarios como para los pacientes."</p>
+						</div>
+					</div>
+				</div>
+				<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+						style="height: 100%; width: 100%;">
+						<path d="M0.00,49.98 C250.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: #D2ECF9;;"></path>
+			</svg></div>
+			</section>			
+								
+			<section class="nuestros-servicios">
+				<div class="contenedor">
+					<h2 class="title">NUESTROS SERVICIOS</h2>
+					<div class="servicio-cont">
+						<div class="servicio-ind">
+							<img src="imagenes/software.png" alt="">
+							<h3>Software BrainSoft</h3>
+							<p>Software fácil de utilizar con diagnósticos ilimitados.</p>
+						</div>
+						<div class="servicio-ind">
+							<img src="imagenes/online.png" alt="">
+							<h3>Servicio Online</h3>
+							<p>Diagnósticos unitarios desde la página web.</p>
+						</div>
+					</div>
+				</div>
+				<div class="boton2">
+					<a href="productos.html">Saber más</a>
+				</div>
+				<div class="wave" style="height: 120px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+						style="height: 100%; width: 100%;">
+						<path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: #1F5F8B;;"></path>
+				</svg></div>
+			</section>	
+		</main>
+		<footer>		
+			<div class="contenedor-footer">
+				<div class="content-foo">
+					<h4>Teléfono</h4>
+					<p>945621070</p>
+				</div>
+				<div class="content-foo">
+					<h4>Email</h4>
+					<p>contact@dtek.com</p>
+				</div>
+				<div class="content-foo">
+					<h4>Localización</h4>
+					<p>Calle Buenos Aires 12, Bilbao</p>
+				</div>
+			</div>
+			<h2 class="titulo-final">D-TEK&trade;</h2>
+		</footer>
+		<script>
+			const toggle = () => {
+				document.getElementById("nav").classList.toggle("navactive");
+			};
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,209 @@
+/*NOSOTROS*/
+
+.productos{
+	width: 100%;
+    height: 600px;
+    background: rgba(24, 145, 172, 0.5);
+	margin: auto;
+}
+
+video {
+	position: absolute;
+	left: 0px;
+	top: -60px;
+	height: 731px;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.cabecero{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cabecero h1{
+    font-size: 70px;
+    color:#D2ECF9;
+}
+
+.cabecero h2{
+    font-size: 45px;
+    font-weight: 300;
+    color:#D2ECF9;
+}
+
+.productos .wave{
+    position: absolute;
+    bottom: 0;
+	padding-bottom: 30px;
+    width: 100%;
+}
+
+/*BrainSoft*/
+
+.brainsoft{
+    padding: 0;
+	margin: auto;
+    background: #D2ECF9;
+}
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 40%;
+    text-align: center;
+	width: 430px;
+	height: 330px;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: rgba(24, 145, 172, 0.5);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+.servicio-ind:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 0;
+	padding-bottom: 10px;
+	color: #253B6E;
+	font-size: 22px;
+}
+
+.servicio-ind p{
+    font-weight: 400;
+    text-align: center;
+	color: #D2ECF9;
+}
+
+.contenedor {
+    padding: 0 0 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.boton a{
+	position: relative;
+	top: 35px;
+	padding: 10px;
+	margin-left: 44.5%;
+	text-decoration: none;
+	border: 3px solid #1F5F8B;
+	border-radius: 4px;
+	color: #1F5F8B;
+	transition: all 400ms ease;
+	text-align: center;
+	font-size: 16px;
+}
+
+.boton a:hover{
+	background: #1F5F8B;
+	color: #D2ECF9;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+/*Software BrainSoft*/
+
+.software{
+    background: rgba(24, 145, 172, 0.5);
+	padding: 0;
+	margin: auto;
+}
+
+.software .wave{
+    position: relative;
+    width: 100%;
+}
+
+.contenido-textos{
+    width: 100%;
+	padding-top: 20px;
+}
+
+.contenido-textos P{
+    padding-bottom: 20px;
+	color: #253B6E;
+	text-align: justify;
+}
+
+.contenido-textos h3{
+    padding-bottom: 15px;
+	color: #253B6E;
+}
+
+.software .contenido-textos h3 span{
+    background: #D2ECF9;
+    color: #1891AC;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+/*Servicio Online*/
+
+.online .contenido-textos h3 span{
+    background: #1891AC;
+    color: #D2ECF9;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+/*Pantalla pequeña*/
+
+@media (max-width: 920px) {
+	
+	.texto h1{
+		font-size: 58px;
+	}
+
+	.texto p{
+		width: 88%;
+		font-size: 18px;
+	}
+	
+	.ind img{
+		width:52px;
+		height:73px;
+		margin-top:9px;
+		margin-bottom:6px;
+	}
+	
+	.ind h4{
+		margin-bottom:5px;
+	}
+	
+	.ind p{
+		margin-left:7px;
+		margin-right:7px;
+	}		
+}

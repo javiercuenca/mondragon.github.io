@@ -1,0 +1,244 @@
+* {
+	font-family: 'Segoe UI', Roboto, 'Poppins', sans-serif;
+	text-decoration: none;
+	outline: none;
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+/*NAVEGADOR*/
+
+header {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #1F5F8B;
+	color: #253b6e;
+	display: flex;
+	align-items: center;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 20px;
+	width: 280px;
+}
+
+.brand .logo {
+	margin-top: 12px;
+	margin-left: 25px;
+}
+
+.brand h1 {
+	margin-left: 20px;
+}
+
+.navbar {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	z-index: 223;
+}
+
+.navbar ul li #headIcon {
+	padding: 0;
+}
+
+.navbar ul {
+	width: 100%;
+	text-align: center;
+	text-align: right;
+	padding-right: 5%;
+}
+
+.navbar ul li {
+	display: inline-block;
+	transition: all 0.5s ease;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar ul li:hover #headtitle{
+	color: #253B6E;
+	transition: all 0.3s ease-in-out;
+}
+
+.ultima a{
+	padding: 0 10px 0 0;
+}
+
+.active a{
+	color: #1891AC;
+	font-size: 18px;
+}
+
+.active #headIcon {
+	color: #1891AC;
+}
+
+.navbar ul li #headtitle{
+	color: #d2ecf9;
+	font-size: 18px;
+}
+
+#menuIcon {
+	display: none;
+	z-index: 223;
+}
+
+/*CUERPO*/
+
+body {
+	background-color: #D2ECF9;
+	display: flex;
+	flex-direction: column;
+	min-height: 450px;
+}
+
+.title{
+    font-size: 50px;
+    color: #1F5F8B;
+    font-weight: 700;
+	padding-top: 20px;
+    padding-bottom: 10px;
+	text-align: center;
+}
+
+/*PIE*/
+
+footer{
+	width: 100%;
+	background: #1F5F8B;
+	padding-top: -10;
+	padding-bottom: 30px;
+	margin: auto;
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #D2ECF9; 
+}
+
+.content-foo{
+	text-align: center;
+	justify-content: center;
+}
+
+.content-foo h4{
+	color: #D2ECF9;
+	border-bottom: 3px solid #D2ECF9;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.content-foo p{
+	color: #D2ECF9;
+	text-align: center;
+}
+
+.titulo-final{
+	text-align: center;
+	font-size: 24px;
+	margin: 18px 0 0 0;
+	color: #D2ECF9;
+}
+
+/*PANTALLA PEQUEÑA*/
+
+@media (max-width: 860px) {
+	.navbar {
+		position: absolute;
+		right: 0px;
+		top: -10px;
+		display: block;
+		width: 50%;
+		display: none;		
+	}
+	
+	.navbar.navactive {
+		display: inline;
+	}
+	
+	#menuIcon {
+		display: inline;
+		position: absolute;
+		font-size: 25px;
+		margin-left: 88%;
+		z-index: 222;
+		float: right;
+		padding: 1%;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.navbar ul {
+		position: absolute;
+		right: 0px;
+		top: 80px;
+		width: 250px;
+		height: 310px;
+		background-color: #253B6E;
+	}
+	
+	.navbar ul li {
+		display: block;
+		width: 100%;
+		height: 55px;
+		text-align: left;
+		position: relative;
+		top: 15px;
+		font-size: 18px;
+	}
+	
+	ul li #headIcon {
+		display: inline-block;
+		font-size: 25px;
+		color: #1F5F8B;
+		margin-top: 15px;
+		margin-left: 15px;
+	}	
+	
+	ul li a {
+		margin-left: 20px;
+		font-family: 600;
+	}
+	
+	.navbar ul li:hover #headtitle{
+		color: #D2ECF9;
+	}
+	
+	.navbar ul li:hover{
+		text-shadow: 0px 0px 20px #d2ecf9;
+		transition: all 0.3s ease-in-out;
+	}
+	
+	.active a{
+		text-shadow: 0px 0px 20px #d2ecf9;
+	}
+	
+	.active #headIcon {
+		text-shadow: 0px 0px 20px #d2ecf9;
+	}
+
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}	
+}

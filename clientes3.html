@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="shortcut icon" href="imagenes/logo.png">
+		<link href="clientes.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<title>Clientes</title>
+	</head>
+	<body class="login">
+		<header>
+			<div class="brand">
+				<span class="logo"><img src="imagenes/logo.png"></span>
+				<h1>D-TEK</h1>
+			</div>
+			<span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+			<div class="navbar" id="nav">
+				<ul>
+					<li>
+						<span class="fas fa-home" id="headIcon"></span>
+						<a href="inicio.html" id="headtitle">Inicio</a>
+					</li>
+					<li>
+						<span class="fas fa-hand-paper" id="headIcon"></span>
+						<a href="nosotros.html" id="headtitle">Nosotros</a>
+					</li>
+					<li>
+						<span class="fas fa-book-open" id="headIcon"></span>
+						<a href="productos.html"id="headtitle">Productos</a>
+					</li>
+					<li class="active">
+						<span class="far fa-user-circle" id="headIcon"></span>
+						<a href="clientes3.html">Clientes</a>
+					</li>
+					<li class="ultima">
+						<span class="fas fa-question-circle" id="headIcon"></span>
+						<a href="preguntas.html" id="headtitle">Preguntas</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="cuerpo">
+				</div>
+					<a href="../ANEXO_F_Interfaz/BrainSoft/BrainSoft/for_redistribution" class="descargar" target="_blank"><img src="imagenes/descargar.png" alt="">Descargar</a>
+				</div>
+				<div class="contenedor-brainsoft">
+					<div class="arriba">
+						<h1 class="title">BRAINSOFT</h1>						
+					</div>
+					<div class="contactanos">
+					</div>
+					<div class="acciones">
+						<div class="acciones-cont">					
+							<a href="#">
+								<div class="acciones-ind">
+									<img class="imagen1" src="imagenes/cargar_datos.png" alt="">
+									<input class="file-select" type="file" name="archivosubido">
+									<h2>CARGAR DATOS</h2>
+								</div>
+							</a>				
+							<a href="tabla_resultados/resultados.xml">
+								<div class="acciones-ind">
+									<img class="imagen2" src="imagenes/resultados.png" alt="">
+									<h3>VER RESULTADOS</h3>
+								</div>
+							</a>									
+						</div>
+					</div>
+					<a class="instrucciones" href="documentos" target="_blank"><img src="imagenes/instrucciones.png" alt="">Documentos</a>
+					<a href="clientes1.html" class="cerrar-sesion"><span class="fas fa-power-off"></span> Cerrar sesión</a>
+				</div>				
+			</section>
+		</main>
+		<script>
+			const toggle = () => {
+				document.getElementById("nav").classList.toggle("navactive");
+			};
+		</script>	
+	</body>
+</html>

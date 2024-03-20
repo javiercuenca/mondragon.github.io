@@ -1,0 +1,219 @@
+/*INICIO*/
+
+.cabezal {
+    width: 100%;
+    height: 630px;
+    background: #1891AC;
+    background: linear-gradient(to right, rgba(24, 145, 172, 0.5), rgba(24, 145, 172, 0.5)), url(imagenes/inicio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.textos-header{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color:#D2ECF9;
+}
+
+.textos-header h2{
+    font-size: 45px;
+    font-weight: 300;
+    color:#D2ECF9;
+}
+
+.cabezal .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor {
+    padding: 0 0 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Nuestra StartUp*/
+
+main .nuestra-startup{
+    padding: 0 0 10px 0;
+	margin: auto;
+}
+
+.contenedor-nuestra-startup{
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+}
+
+.imagen-nuestra-startup{
+    width: 50%;
+	padding-top: 30px;
+}
+
+.nuestra-startup .contenido-textos{
+    width: 52%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.contenido-textos h3{
+    padding-bottom: 10px;
+	color: #253B6E;
+}
+
+.contenido-textos h3 span{
+    background: #1F5F8B;
+    color: #D2ECF9;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 15px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.boton a{
+	width: 80px;
+	padding: 8px;
+	margin-left: 45%;
+	margin-top: 20px;
+	text-decoration: none;
+	border: 3px solid #1F5F8B;
+	border-radius: 4px;
+	color: #1F5F8B;
+	transition: all 400ms ease;
+	text-align: center;
+	font-size: 16px;
+}
+
+.boton a:hover{
+	background: #1F5F8B;
+	color: #D2ECF9;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+/*Opinion de nuestros clientes*/
+
+.clientes{
+	background: rgba(24, 145, 172, 0.5);
+    padding: 0 0 10px 0;
+	margin: auto;
+	margin-top: 0px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+	padding: 0 0 10px 0;
+	margin: auto;
+}
+
+.cards .card{
+    background: #1F5F8B;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #D2ECF9;
+	background-color: #D2ECF9;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card .contenido-texto-card{
+    width: 60%;
+    color: #D2ECF9;
+}
+
+.cards .card .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.clientes .wave{
+	position: relative;
+    bottom: -20px;
+    width: 100%;
+}
+
+/*Nuestros Servicios*/
+
+.nuestros-servicios{
+    padding: 0;
+	margin: auto;
+}
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 40%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 0;
+	color: #253B6E;
+	font-size: 22px;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: center;
+	padding-bottom: -10px;
+}
+
+.boton2 a{
+	padding: 10px;
+	margin-left: 48%;
+	text-decoration: none;
+	border: 3px solid #1F5F8B;
+	border-radius: 4px;
+	color: #1F5F8B;
+	transition: all 400ms ease;
+	text-align: center;
+	font-size: 16px;
+}
+
+.boton2 a:hover{
+	background: #1F5F8B;
+	color: #D2ECF9;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}

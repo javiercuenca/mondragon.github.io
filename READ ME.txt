@@ -1,0 +1,5 @@
+Para ver la página web se recomienda comenzar por el archivo "inicio.html".
+
+Para poder visualizar la tabla de resultados, se debe configurar chrome para poder ver los archivos .xml.
+
+Para poder ver la opción de descargar la interfaz, el ANEXO_F_Interfaz debe estas descargado y almacenado en la misma carpeta que el ANEXO_G_Página web.

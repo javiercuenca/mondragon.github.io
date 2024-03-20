@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Página_web"> 
+		<xs:complexType> 
+			<xs:sequence>
+				<xs:element name="Cliente"> 
+					<xs:complexType> 
+						<xs:sequence>
+							<xs:element name="Usuario"> 
+								<xs:complexType> 
+									<xs:sequence>
+										<xs:element name="Nombre">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Médico">
+														<xs:simpleType> 
+															<xs:restriction base="xs:string">
+																<xs:pattern value="Dr.|Dra."/> 
+															</xs:restriction> 
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="Apellidos">
+														<xs:simpleType> 
+																<xs:restriction base="xs:string">
+																	<xs:pattern value="[A-Z][a-z]+ [A-Z][a-z]+"/> 
+																</xs:restriction> 
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Diagnóstico" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ID_paciente">
+														<xs:simpleType> 
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[0-9]{8}"/> 
+															</xs:restriction> 
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="Fecha_del_diagnóstico" type="xs:date"/>
+													<xs:element name="Resultado_de_diagnóstico">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Resultado">
+																	<xs:simpleType> 
+																			<xs:restriction base="xs:string">
+																				<xs:pattern value="Con tumor|Sin tumor|Sin resultado"/> 
+																			</xs:restriction> 
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="Gráfico">
+																	<xs:complexType>
+																		<xs:attribute name="imagen" type="xs:string"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>													
+												</xs:sequence>
+												<xs:attribute name="id" type="xs:integer" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="nombre" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

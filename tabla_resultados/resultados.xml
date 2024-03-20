@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="resultados.xslt"?>
+<!--<!DOCTYPE Página_web SYSTEM "resultados.dtd">-->
+
+<Página_web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resultados.xsd">
+	<Cliente nombre='Osakidetza'>
+		<Usuario id='4785A'>
+			<Nombre>
+				<Médico>Dr.</Médico>
+				<Apellidos>Martínez Valero</Apellidos>
+			</Nombre>
+			
+			<Diagnóstico id='01'>
+				<ID_paciente>12049875</ID_paciente>
+				<Fecha_del_diagnóstico>2021-05-24</Fecha_del_diagnóstico>
+				<Resultado_de_diagnóstico>
+					<Resultado>Con tumor</Resultado>
+					<Gráfico imagen="01_con_tumor.jpg"/>
+				</Resultado_de_diagnóstico>
+			</Diagnóstico>
+			
+			<Diagnóstico id='02'>
+				<ID_paciente>13564978</ID_paciente>
+				<Fecha_del_diagnóstico>2021-03-05</Fecha_del_diagnóstico>
+				<Resultado_de_diagnóstico>
+					<Resultado>Sin tumor</Resultado>
+					<Gráfico imagen="02_sin_tumor.jpeg"/>
+				</Resultado_de_diagnóstico>
+			</Diagnóstico>
+
+			<Diagnóstico id='03'>
+				<ID_paciente>65234896</ID_paciente>
+				<Fecha_del_diagnóstico>2022-06-09</Fecha_del_diagnóstico>
+				<Resultado_de_diagnóstico>
+					<Resultado>No concluyente</Resultado>
+					<Gráfico imagen="03_no_concluyente.jpeg"/>
+				</Resultado_de_diagnóstico>
+			</Diagnóstico>
+		</Usuario>
+	</Cliente>
+</Página_web>
